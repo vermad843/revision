@@ -102,82 +102,136 @@
 
 // forloops  : 1 
 
-const flavours  = ['choco', 'gin', 'car', 'cof', 'wal', 'ban'];
+// const flavours  = ['choco', 'gin', 'car', 'cof', 'wal', 'ban'];
 
-for(let i = 0; i < flavours.length; i++) {
-   console.log('i like ' + flavours[i] + ' cake');
+// for(let i = 0; i < flavours.length; i++) {
+//    console.log('i like ' + flavours[i] + ' cake');
+// }
+
+
+// // forEach
+
+// flavours.forEach((flavour) => {
+//    console.log(`i like ${flavour} cake`);
+// });
+
+
+// //  forloops : 2
+
+
+// const numbers = [2, 4, 6, 8];
+
+// for (let i = 0; i < numbers.length; i++) {
+//    console.log('The number', numbers[i], 'is at index', i);   
+// }
+
+// // forEach 
+
+// numbers.forEach((number, index) => {
+//    console.log(`The number,${number} is at index,${index}`);
+// });
+
+
+
+// // forloops : 3 
+
+// const evenNumbers = [2, 4, 6, 8, 10];
+
+// for (let i = 0; i < evenNumbers.length; i++) {
+//    evenNumbers[i] = evenNumbers[i] * 2;
+// }
+
+// console.log(evenNumbers);
+
+
+// // forEach
+
+// evenNumbers.forEach((evenNumber, index) => {
+//    evenNumber[index] = evenNumber[index] * 2;
+// })
+
+
+// console.log(evenNumbers);
+
+
+
+
+// // for loops : 4 
+
+//  let products =  [{
+//     name : 'Running shoes',
+//     price : 75
+//  }, {
+//     name : 'Golf shoes',
+//     price : 85
+//  }, {
+//     name : 'Dress shoes',
+//     price : 95
+//  }, {
+//     name : 'Walking shoes',
+//     price : 65
+//  }, {
+//     name : 'Sandals',
+//     price : 55
+//  }];
+
+//  products.forEach((product) => {
+//     console.log(product.name)
+//  })
+
+
+
+
+
+// accumulator : forloop 
+
+let numbers_1 = [1, 2, 3, 4, 5];
+
+let sum = 0;//initialize accumulator
+
+for (let i = 0; i < numbers_1.length; i++) {
+   const number = numbers_1[i];
+   sum += number;//update accumulator
 }
 
+console.log(sum);//15
 
-// forEach
 
-flavours.forEach((flavour) => {
-   console.log(`i like ${flavour} cake`);
+//  forEach 
+
+numbers_1.forEach((number) => {
+   sum+=number
 });
 
+console.log(sum);
 
-//  forloops : 2
 
 
-const numbers = [2, 4, 6, 8];
 
-for (let i = 0; i < numbers.length; i++) {
-   console.log('The number', numbers[i], 'is at index', i);   
+// forloops : 
+
+let numbers_2 = [1, 2, 3, 4, 5];
+let doubledNumbers = [];
+
+for (let i = 0; i < numbers_2.length; i++) {
+   const element = numbers_2[i];
+   doubledNumbers.push(element * 2);  
 }
+ 
+console.log(doubledNumbers);
+
 
 // forEach 
 
-numbers.forEach((number, index) => {
-   console.log(`The number,${number} is at index,${index}`);
+numbers_2.forEach((number) => {
+   doubledNumbers.push(number * 2);  
 });
 
-
-
-// forloops : 3 
-
-const evenNumbers = [2, 4, 6, 8, 10];
-
-for (let i = 0; i < evenNumbers.length; i++) {
-   evenNumbers[i] = evenNumbers[i] * 2;
-}
-
-console.log(evenNumbers);
-
-
-// forEach
-
-evenNumbers.forEach((evenNumber, index) => {
-   evenNumber[index] = evenNumber[index] * 2;
-})
-
-
-console.log(evenNumbers);
+console.log(doubledNumbers);
 
 
 
 
-// for loops : 4 
-
- let products =  [{
-    name : 'Running shoes',
-    price : 75
- }, {
-    name : 'Golf shoes',
-    price : 85
- }, {
-    name : 'Dress shoes',
-    price : 95
- }, {
-    name : 'Walking shoes',
-    price : 65
- }, {
-    name : 'Sandals',
-    price : 55
- }];
-
- products.forEach((product) => {
-    console.log(product.name)
- })
 
 
 
