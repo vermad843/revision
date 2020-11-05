@@ -79,22 +79,123 @@
 // forEach 
 // for loop 
 
-const numbers = [1, 2 ,3 , 4, 5];
+// const numbers = [1, 2 ,3 , 4, 5];
 
-// forloop
+// // forloop
 
-for(i = 0; i < numbers.length; i++) {
-   const ele = numbers[i];
-   console.log(ele);
+// for(i = 0; i < numbers.length; i++) {
+//    const ele = numbers[i];
+//    console.log(ele);
+// }
+
+// // forEach 
+
+// numbers.forEach((number, index, arr) => {
+//    return console.log(number, index,arr);
+// })
+
+
+// numbers.forEach(number => console.log(number));
+
+
+// Example : 
+
+// forloops  : 1 
+
+const flavours  = ['choco', 'gin', 'car', 'cof', 'wal', 'ban'];
+
+for(let i = 0; i < flavours.length; i++) {
+   console.log('i like ' + flavours[i] + ' cake');
+}
+
+
+// forEach
+
+flavours.forEach((flavour) => {
+   console.log(`i like ${flavour} cake`);
+});
+
+
+//  forloops : 2
+
+
+const numbers = [2, 4, 6, 8];
+
+for (let i = 0; i < numbers.length; i++) {
+   console.log('The number', numbers[i], 'is at index', i);   
 }
 
 // forEach 
 
-numbers.forEach((number, index, arr) => {
-   return console.log(number, index,arr);
+numbers.forEach((number, index) => {
+   console.log(`The number,${number} is at index,${index}`);
+});
+
+
+
+// forloops : 3 
+
+const evenNumbers = [2, 4, 6, 8, 10];
+
+for (let i = 0; i < evenNumbers.length; i++) {
+   evenNumbers[i] = evenNumbers[i] * 2;
+}
+
+console.log(evenNumbers);
+
+
+// forEach
+
+evenNumbers.forEach((evenNumber, index) => {
+   evenNumber[index] = evenNumber[index] * 2;
 })
 
 
-// numbers.forEach(number => console.log(number));
+console.log(evenNumbers);
+
+
+
+
+// for loops : 4 
+
+ let products =  [{
+    name : 'Running shoes',
+    price : 75
+ }, {
+    name : 'Golf shoes',
+    price : 85
+ }, {
+    name : 'Dress shoes',
+    price : 95
+ }, {
+    name : 'Walking shoes',
+    price : 65
+ }, {
+    name : 'Sandals',
+    price : 55
+ }];
+
+ products.forEach((product) => {
+    console.log(product.name)
+ })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
