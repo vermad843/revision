@@ -185,49 +185,106 @@
 
 // accumulator : forloop 
 
-let numbers_1 = [1, 2, 3, 4, 5];
+// let numbers_1 = [1, 2, 3, 4, 5];
 
-let sum = 0;//initialize accumulator
+// let sum = 0;//initialize accumulator
 
-for (let i = 0; i < numbers_1.length; i++) {
-   const number = numbers_1[i];
-   sum += number;//update accumulator
+// for (let i = 0; i < numbers_1.length; i++) {
+//    const number = numbers_1[i];
+//    sum += number;//update accumulator
+// }
+
+// console.log(sum);//15
+
+
+// //  forEach 
+
+// numbers_1.forEach((number) => {
+//    sum+=number
+// });
+
+// console.log(sum);
+
+
+
+
+// // forloops : 
+
+// let numbers_2 = [1, 2, 3, 4, 5];
+// let doubledNumbers = [];
+
+// for (let i = 0; i < numbers_2.length; i++) {
+//    const element = numbers_2[i];
+//    doubledNumbers.push(element * 2);  
+// }
+ 
+// console.log(doubledNumbers);
+
+
+// // forEach 
+
+// numbers_2.forEach((number) => {
+//    doubledNumbers.push(number * 2);  
+// });
+
+// console.log(doubledNumbers);
+
+
+//  forloops : 
+
+let things = ['shoe', 'table', 'book', 'computer', 'phone'];
+let copiedThings = [];
+
+for (let i = 0; i < things.length; i++) {
+   const element = things[i];
+   copiedThings.push(element);
 }
 
-console.log(sum);//15
+console.log(copiedThings);
 
 
-//  forEach 
+// forEach 
 
-numbers_1.forEach((number) => {
-   sum+=number
-});
+things.forEach((number) => {
+   copiedThings.push(number);
+})
 
-console.log(sum);
-
+console.log(copiedThings);
 
 
 
 // forloops : 
 
-let numbers_2 = [1, 2, 3, 4, 5];
-let doubledNumbers = [];
 
-for (let i = 0; i < numbers_2.length; i++) {
-   const element = numbers_2[i];
-   doubledNumbers.push(element * 2);  
+let all_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let evenNumbers = [];
+
+for (let i = 0; i < all_numbers.length; i++) {
+   const element = all_numbers[i];
+   if(element % 2 === 0) {
+      evenNumbers.push(element);
+   } 
 }
- 
-console.log(doubledNumbers);
+
+console.log(evenNumbers);
 
 
 // forEach 
 
-numbers_2.forEach((number) => {
-   doubledNumbers.push(number * 2);  
+all_numbers.forEach((number) => {
+   if(number % 2 === 0) {
+      evenNumbers.push(number);
+   }
 });
 
-console.log(doubledNumbers);
+console.log(evenNumbers);
+
+
+
+
+
+
+
 
 
 
