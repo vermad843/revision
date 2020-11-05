@@ -35,29 +35,66 @@
 
 // console.log(getName('dk'));
 
-const getNameFn = () => {
-    return 'dk'; 
+// const getNameFn = () => {
+//     return 'dk'; 
+// }
+
+
+// const greet = (getName,greeting) => {
+//    console.log(`${greeting} ${getName()}`);
+// }
+
+// greet(getNameFn, ' hello' );
+
+
+
+
+// // closure
+
+// const makeAdder = (number) => {
+//   return  (other_number) => {
+//      return number + other_number;
+//   } 
+// }
+
+// const fiveAdder = makeAdder(5);
+// console.log(fiveAdder(2));
+
+// console.log(makeAdder(2)(5));
+
+
+// 
+
+
+// higher order function - functions that take 
+
+//   . take function as a argumnet 
+//   . return a function as result
+
+
+
+
+
+// [************]
+// forEach 
+// for loop 
+
+const numbers = [1, 2 ,3 , 4, 5];
+
+// forloop
+
+for(i = 0; i < numbers.length; i++) {
+   const ele = numbers[i];
+   console.log(ele);
 }
 
+// forEach 
 
-const greet = (getName,greeting) => {
-   console.log(`${greeting} ${getName()}`);
-}
-
-greet(getNameFn, ' hello' );
-
+numbers.forEach((number, index, arr) => {
+   return console.log(number, index,arr);
+})
 
 
+// numbers.forEach(number => console.log(number));
 
-// closure
 
-const makeAdder = (number) => {
-  return  (other_number) => {
-     return number + other_number;
-  } 
-}
-
-const fiveAdder = makeAdder(5);
-console.log(fiveAdder(2));
-
-console.log(makeAdder(2)(5));
