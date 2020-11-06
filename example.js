@@ -284,113 +284,129 @@
 // 
 // map : 
 
-let numbers = [1, 2, 3];
+// let numbers = [1, 2, 3];
 
-let doubledNumbers = numbers.map((number) => {
-   return number*2;
-})
+// let doubledNumbers = numbers.map((number) => {
+//    return number*2;
+// })
 
-console.log(doubledNumbers);
+// console.log(doubledNumbers);
+
+
+// // 
+
+
+
+// const days = [
+//   'Sunday',
+//   'Monday',
+//   'Tuesday',
+//   'Wednesday',
+//   'Thursday',
+//   'Friday',
+//   'Saturday',
+// ];
+
+// const threeLetters = days.map((day) => {
+//    // return `${day[0]}${day[1]}${day[2]}`;
+//    return day.substring(0,3);
+// })
+
+// console.log(threeLetters);
+
+
+// // 
+
+// const people = [{
+//    first_name : 'Dk',
+//    last_name : 'verma'
+// },{
+//    first_name : 'vishnu',
+//    last_name : 'verma'
+// }, {
+//    first_name : 'hey',
+//    last_name : 'man'
+// }, {
+//    first_name : 'kd',
+//    last_name : 'uhho'
+// }];
+
+
+// const fullName = people.map((person) => {
+//    return `${person.first_name} ${person.last_name}`;
+// }) 
+
+// console.log(fullName);
+
+
+
+// // 
+
+// const animals = [{
+//    name : 'cat',
+//    size : 'small'
+// }, {
+//    name : 'dog',
+//    size : 'small'
+// }, {
+//    name : 'lion',
+//    size : 'medium'
+// }, {
+//    name : 'elephant',
+//    size : 'big' 
+// }];
+
+// const animalName = animals.map((animal) => {
+//    return `${animal.name}`
+// });
+
+// console.log(animalName);
+
+
+// // 
+
+// const theNumbers = [4, 8, 15, 16, 23, 42];
+
+// const valueAndIndex = theNumbers.map((number, index) => {
+//    return {
+//       number,
+//       index
+//    }
+// });
+
+// console.log(valueAndIndex);
+
+
+// // 
+
+
+// const starter = [2, 5, 10];
+
+// const multiplied = starter.map((start, index, arr) => {
+//    let nextIndex = index + 1;
+//    if(index == arr.length-1) {
+//       nextIndex = 0;
+//    }
+//    return start*arr[nextIndex];
+// })
+
+// console.log(multiplied);
+
 
 
 // 
+// ***** filter : 
 
 
+const numbers = [1, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const days = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-];
-
-const threeLetters = days.map((day) => {
-   // return `${day[0]}${day[1]}${day[2]}`;
-   return day.substring(0,3);
-})
-
-console.log(threeLetters);
-
-
-// 
-
-const people = [{
-   first_name : 'Dk',
-   last_name : 'verma'
-},{
-   first_name : 'vishnu',
-   last_name : 'verma'
-}, {
-   first_name : 'hey',
-   last_name : 'man'
-}, {
-   first_name : 'kd',
-   last_name : 'uhho'
-}];
-
-
-const fullName = people.map((person) => {
-   return `${person.first_name} ${person.last_name}`;
-}) 
-
-console.log(fullName);
-
-
-
-// 
-
-const animals = [{
-   name : 'cat',
-   size : 'small'
-}, {
-   name : 'dog',
-   size : 'small'
-}, {
-   name : 'lion',
-   size : 'medium'
-}, {
-   name : 'elephant',
-   size : 'big' 
-}];
-
-const animalName = animals.map((animal) => {
-   return `${animal.name}`
+const evenNumbers = numbers.filter((number) => {
+   return number % 2 === 0 ;
 });
 
-console.log(animalName);
+console.log(evenNumbers);
 
 
-// 
-
-const theNumbers = [4, 8, 15, 16, 23, 42];
-
-const valueAndIndex = theNumbers.map((number, index) => {
-   return {
-      number,
-      index
-   }
-});
-
-console.log(valueAndIndex);
-
-
-// 
-
-
-const starter = [2, 5, 10];
-
-const multiplied = starter.map((start, index, arr) => {
-   let nextIndex = index + 1;
-   if(index == arr.length-1) {
-      nextIndex = 0;
-   }
-   return start*arr[nextIndex];
-})
-
-console.log(multiplied);
 
 
 
