@@ -407,6 +407,84 @@ const evenNumbers = numbers.filter((number) => {
 console.log(evenNumbers);
 
 
+// 
+
+const days = [
+   'Sunday',
+   'Monday',
+   'Tuesday',
+   'Wednesday',
+   'Thursday',
+   'Friday',
+   'Saturday'
+];
+
+const startWithS = days.filter((day) => {
+   // return day[0] === 'S';
+   return day.charAt(0) === 'S';
+});
+
+console.log(startWithS);
+
+
+// 
+
+const people = [{
+   first_name : 'Dk',
+   last_name : 'Verma'
+}, {
+   first_name : 'vishnu',
+   last_name : 'Verma'
+}, {
+   first_name : 'john',
+   last_name : 'Verma'
+}, {
+   first_name : 'brock',
+   last_name : 'Verma'
+}];
+
+
+const lessThenThree = people.filter((person) => {
+   return person.first_name.length < 3 
+});
+
+console.log(lessThenThree);
+
+
+// 
+
+const animals = [{
+   name : 'cat',
+   size : 'small'
+}, {
+   name : 'dog',
+   size : 'medium'
+}, {
+   name : 'lion',
+   size : 'small'
+}, {
+   name : 'elephant',
+   size : 'big'
+}];
+
+
+const smallSize = animals.filter((animal) => {
+   return animal.size === 'small';
+});
+
+console.log(smallSize);
+
+
+
+// 
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction'];
+
+const lengthMoreThenFive = words.filter((word) => {
+   return word.length > 5;
+});
+
+console.log(lengthMoreThenFive);
 
 
 
