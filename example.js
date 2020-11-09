@@ -487,24 +487,36 @@
 // console.log(lengthMoreThenFive);
 
 
-const genres = ['jazz', 'metal-core', 'punk', 'ska-core','vaporwave','country-core' ];
+// const genres = ['jazz', 'metal-core', 'punk', 'ska-core','vaporwave','country-core' ];
 
 
-const includesCore = genres.filter((gener) => {
-   // return gener.includes('core');
-   const i =  gener.indexOf('core');
-   console.log(i);
-   if(i !== -1) {
-     return i;
-   }
-});
+// const includesCore = genres.filter((gener) => {
+//    // return gener.includes('core');
+//    const i =  gener.indexOf('core');
+//    console.log(i);
+//    if(i !== -1) {
+//      return i;
+//    }
+// });
 
-console.log(includesCore);
-
-
+// console.log(includesCore);
 
 
-// Reduce : *****
+
+
+// Reduce : *****[]:
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+let sum = numbers.reduce((sum, number) => {
+   return sum+=number ;
+},0);
+
+console.log(sum);
+
+
+
 
 
 
