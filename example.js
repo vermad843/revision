@@ -398,93 +398,116 @@
 // ***** filter : 
 
 
-const numbers = [1, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numbers = [1, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const evenNumbers = numbers.filter((number) => {
-   return number % 2 === 0 ;
+// const evenNumbers = numbers.filter((number) => {
+//    return number % 2 === 0 ;
+// });
+
+// console.log(evenNumbers);
+
+
+// // 
+
+// const days = [
+//    'Sunday',
+//    'Monday',
+//    'Tuesday',
+//    'Wednesday',
+//    'Thursday',
+//    'Friday',
+//    'Saturday'
+// ];
+
+// const startWithS = days.filter((day) => {
+//    // return day[0] === 'S';
+//    return day.charAt(0) === 'S';
+// });
+
+// console.log(startWithS);
+
+
+// // 
+
+// const people = [{
+//    first_name : 'Dk',
+//    last_name : 'Verma'
+// }, {
+//    first_name : 'vishnu',
+//    last_name : 'Verma'
+// }, {
+//    first_name : 'john',
+//    last_name : 'Verma'
+// }, {
+//    first_name : 'brock',
+//    last_name : 'Verma'
+// }];
+
+
+// const lessThenThree = people.filter((person) => {
+//    return person.first_name.length < 3 
+// });
+
+// console.log(lessThenThree);
+
+
+// // 
+
+// const animals = [{
+//    name : 'cat',
+//    size : 'small'
+// }, {
+//    name : 'dog',
+//    size : 'medium'
+// }, {
+//    name : 'lion',
+//    size : 'small'
+// }, {
+//    name : 'elephant',
+//    size : 'big'
+// }];
+
+
+// const smallSize = animals.filter((animal) => {
+//    return animal.size === 'small';
+// });
+
+// console.log(smallSize);
+
+
+
+// // 
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction'];
+
+// const lengthMoreThenFive = words.filter((word) => {
+//    return word.length > 5;
+// });
+
+// console.log(lengthMoreThenFive);
+
+
+const genres = ['jazz', 'metal-core', 'punk', 'ska-core','vaporwave','country-core' ];
+
+
+const includesCore = genres.filter((gener) => {
+   // return gener.includes('core');
+   const i =  gener.indexOf('core');
+   console.log(i);
+   if(i !== -1) {
+     return i;
+   }
 });
 
-console.log(evenNumbers);
-
-
-// 
-
-const days = [
-   'Sunday',
-   'Monday',
-   'Tuesday',
-   'Wednesday',
-   'Thursday',
-   'Friday',
-   'Saturday'
-];
-
-const startWithS = days.filter((day) => {
-   // return day[0] === 'S';
-   return day.charAt(0) === 'S';
-});
-
-console.log(startWithS);
-
-
-// 
-
-const people = [{
-   first_name : 'Dk',
-   last_name : 'Verma'
-}, {
-   first_name : 'vishnu',
-   last_name : 'Verma'
-}, {
-   first_name : 'john',
-   last_name : 'Verma'
-}, {
-   first_name : 'brock',
-   last_name : 'Verma'
-}];
-
-
-const lessThenThree = people.filter((person) => {
-   return person.first_name.length < 3 
-});
-
-console.log(lessThenThree);
-
-
-// 
-
-const animals = [{
-   name : 'cat',
-   size : 'small'
-}, {
-   name : 'dog',
-   size : 'medium'
-}, {
-   name : 'lion',
-   size : 'small'
-}, {
-   name : 'elephant',
-   size : 'big'
-}];
-
-
-const smallSize = animals.filter((animal) => {
-   return animal.size === 'small';
-});
-
-console.log(smallSize);
+console.log(includesCore);
 
 
 
-// 
 
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction'];
+// Reduce : *****
 
-const lengthMoreThenFive = words.filter((word) => {
-   return word.length > 5;
-});
 
-console.log(lengthMoreThenFive);
+
 
 
 
