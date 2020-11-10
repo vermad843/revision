@@ -545,14 +545,38 @@
 // 
 
 
-const prices = [29.76, 41.85, 46.5];
+// const prices = [29.76, 41.85, 46.5];
 
-const averagePrices = prices.reduce((average, price, i, array ) => {
-     const averagePrice = average + price/ array.length;
-     return averagePrice;
-}, 0);
+// const averagePrices = prices.reduce((average, price, i, array ) => {
+//      const averagePrice = average + price/ array.length;
+//      return averagePrice;
+// }, 0);
 
-console.log(averagePrices);
+// console.log(averagePrices);//39.370
+
+
+
+// 
+
+const days = [
+   'Sunday',
+   'Monday',
+   'Tuesday',
+   'Wednesday',
+   'Thursday',
+   'Friday',
+   'Saturday'
+];
+
+const firstThreeLetter = days.reduce((shorten, day) => {
+   const firstThree =  day.substring(0, 3);
+    shorten.push(firstThree);
+   return shorten;
+},[]);
+
+console.log(firstThreeLetter);
+
+
 
 
 
