@@ -506,14 +506,47 @@
 
 // Reduce : *****[]:
 
+/* 
+  acc = accumulator,
+  initialize the acc 
+  update acc  
+*/
 
-let numbers = [1, 2, 3, 4, 5];
 
-let sum = numbers.reduce((sum, number) => {
-   return sum+=number ;
-},0);
+// let numbers = [1, 2, 3, 4, 5];
 
-console.log(sum);
+// let sum = numbers.reduce((sum, number) => {
+//    return sum+=number ;
+// },0);
+
+// console.log(sum);//15
+
+
+
+// 
+
+const fruits =  ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana'];
+
+
+const fruitSightings = fruits.reduce((fruitStock, fruit) => {
+   if(fruitStock.hasOwnProperty(fruit)) {
+      fruitStock[fruit]++;
+   }else {
+     fruitStock[fruit] = 1;
+   }
+   return fruitStock;
+}, {});
+
+
+console.log(fruitSightings);
+
+
+
+ 
+
+
+
+
 
 
 
