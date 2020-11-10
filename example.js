@@ -525,20 +525,35 @@
 
 // 
 
-const fruits =  ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana'];
+// const fruits =  ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana'];
 
 
-const fruitSightings = fruits.reduce((fruitStock, fruit) => {
-   if(fruitStock.hasOwnProperty(fruit)) {
-      fruitStock[fruit]++;
-   }else {
-     fruitStock[fruit] = 1;
-   }
-   return fruitStock;
-}, {});
+// const fruitSightings = fruits.reduce((fruitStock, fruit) => {
+//    if(fruitStock.hasOwnProperty(fruit)) {
+//       fruitStock[fruit]++;
+//    }else {
+//      fruitStock[fruit] = 1;
+//    }
+//    return fruitStock;
+// }, {});
 
 
-console.log(fruitSightings);
+// console.log(fruitSightings);
+
+
+
+// 
+
+
+const prices = [29.76, 41.85, 46.5];
+
+const averagePrices = prices.reduce((average, price, i, array ) => {
+     const averagePrice = average + price/ array.length;
+     return averagePrice;
+}, 0);
+
+console.log(averagePrices);
+
 
 
 
